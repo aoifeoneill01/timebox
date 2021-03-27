@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add new task form</title>
+  </head>
+  <body>
+
+<div class="task-background">
+
+    <!-- Add task form -->
+    <form class="new-task" action="add.php" method="POST" id="taskForm" onclick="hideList()">
+      <div class="x-container" onmouseover="newGoDark()" onmouseout="newGoLight()">
+         <img class="exit-icon" src="images/x.svg" alt="exit icon" id="new-light-x">
+         <img class="exit-icon" src="images/x-dark.svg" alt="exit icon" onclick="formExit()" id="new-dark-x">
+       </div>
+       <div class="task-elements">
+      <input type="text" class="title-input exit-1" name="name" placeholder="Task name" value="" required>
+
+    <!-- pick date section -->
+      <div class="pick-date">
+        <label for="pick date">Date</label>
+        <input type="date" class="exit-2" name="date" value="" required>
+      </div>
+
+    <!-- start time section -->
+    <div class="pick-time">
+    <label for="custom-select">From</label>
+
+    <div class="time-input-list-container">
+    <div class="start-time-container" onmouseover="showList()">
+    <input type="text" class="input-section" id="custom-select-hours" value="00" name="startHours" readonly>
+    <p class="semicolon">:</p>
+    <input type="text" class="input-section" id="custom-select-mins" value="00" name="startMins" readonly>
+    </div>
+
+    <div class="time-container" id="first-container">
+    <ul class="custom-select-hours" id="hour-list">
+     <li onclick="ZeroH()">00</li>
+     <li onclick="oneH()">01</li>
+     <li onclick="twoH()">02</li>
+     <li onclick="threeH()">03</li>
+     <li onclick="fourH()">04</li>
+     <li onclick="fiveH()">05</li>
+     <li onclick="sixH()">06</li>
+     <li onclick="sevenH()">07</li>
+     <li onclick="eightH()">08</li>
+     <li onclick="nineH()">09</li>
+     <li onclick="tenH()">10</li>
+     <li onclick="elevenH()">11</li>
+     <li onclick="twelveH()">12</li>
+     <li onclick="thirteenH()">13</li>
+     <li onclick="fourteenH()">14</li>
+     <li onclick="fifteenH()">15</li>
+     <li onclick="sixteenH()">16</li>
+     <li onclick="seventeenH()">17</li>
+     <li onclick="seventeenteenH()">18</li>
+     <li onclick="nineteenH()">19</li>
+     <li onclick="twentyH()">20</li>
+     <li onclick="twentyoneH()">21</li>
+     <li onclick="twentytwoH()">22</li>
+     <li onclick="twentythreeH()">23</li>
+    </ul>
+    <ul class="custom-select-mins">
+     <li onclick="zeroMins()">00</li>
+     <li onclick="fifteenMins()">15</li>
+     <li onclick="thirtyMins()">30</li>
+     <li onclick="fourtyfiveMins()">45</li>
+    </ul>
+    </div>
+    </div>
+
+    <!-- pick to time section -->
+
+    <label for="custom-select" id="to-label">To</label>
+
+    <div class="time-input-list-container">
+    <div class="start-time-container" onmouseover="showListSecond()">
+    <input type="text" class="input-section" id="custom-select-hours2" value="00" name="endHours" readonly>
+    <p class="semicolon">:</p>
+    <input type="text" class="input-section" id="custom-select-mins2" value="00" name="endMins" readonly>
+    </div>
+
+    <div class="time-container" id="second-container">
+    <ul class="custom-select-hours" id="hour-list">
+     <li onclick="ZeroH2()">00</li>
+     <li onclick="oneH2()">01</li>
+     <li onclick="twoH2()">02</li>
+     <li onclick="threeH2()">03</li>
+     <li onclick="fourH2()">04</li>
+     <li onclick="fiveH2()">05</li>
+     <li onclick="sixH2()">06</li>
+     <li onclick="sevenH2()">07</li>
+     <li onclick="eightH2()">08</li>
+     <li onclick="nineH2()">09</li>
+     <li onclick="tenH2()">10</li>
+     <li onclick="elevenH2()">11</li>
+     <li onclick="twelveH2()">12</li>
+     <li onclick="thirteenH2()">13</li>
+     <li onclick="fourteenH2()">14</li>
+     <li onclick="fifteenH2()">15</li>
+     <li onclick="sixteenH2()">16</li>
+     <li onclick="seventeenH2()">17</li>
+     <li onclick="seventeenteenH2()">18</li>
+     <li onclick="nineteenH2()">19</li>
+     <li onclick="twentyH2()">20</li>
+     <li onclick="twentyoneH2()">21</li>
+     <li onclick="twentytwoH2()">22</li>
+     <li onclick="twentythreeH2()">23</li>
+    </ul>
+    <ul class="custom-select-mins">
+     <li onclick="zeroMins2()">00</li>
+     <li onclick="fifteenMins2()">15</li>
+     <li onclick="thirtyMins2()">30</li>
+     <li onclick="fourtyfiveMins2()">45</li>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+    <!-- pick priority section -->
+    <div class="categories-new-task">
+      <div class="category-element" id="priority-container">
+        <img id="priority" src="images/star.svg" alt="priority icon">
+        <label for="priority">Priority</label>
+        <label class="star-border" id="pinkStar">
+          <input type="radio" name="priority" value="pinkStar" class="radio-input" checked>
+          <img src="images/pinkStar.svg">
+        </label>
+         <label class="star-border" id="purpleStar">
+          <input type="radio" name="priority" value="purpleStar" class="radio-input">
+          <img src="images/purpleStar.svg">
+        </label>
+        <label class="star-border" id="greenStar">
+          <input type="radio" name="priority" value="greenStar" class="radio-input">
+          <img src="images/greenStar.svg">
+        </label>
+    </div>
+
+    <!-- project name section -->
+      <div class="category-element" id="projects">
+        <img id="project" src="images/project-black.svg" alt="projects icon">
+        <label for="project">Project</label>
+        <input type="text" class="exit-5" name="project" placeholder="Type here" value="">
+      </div>
+
+      <!-- tag name section -->
+      <div class="category-element" id="tag">
+        <img id="tag" src="images/tag-black.svg" alt="Tag icon">
+        <label for="tag">Tag</label>
+        <input type="text" class="exit-6" name="tag" placeholder="Type here" value="">
+      </div>
+      </div>
+
+      <div class="confirm-button-container">
+        <input type="submit" name="submit" value="Submit" class="button-blue" id="confirm-button">
+      </div>
+      </div>
+     </form>
+
+   </div>
+
+  </body>
+</html>

@@ -1,0 +1,251 @@
+/* CREATE TASK FORM STYLES */
+.visibility{
+  visibility: visible;
+}
+.new-task{
+  z-index: 2;
+  width: 380px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.26);
+  position: fixed;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.task-elements{
+  padding: 30px;
+}
+.confirm-button-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#confirm-button, #delete-button{
+  padding: 10px 30px;
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  width: 115px;
+}
+.title-input, .title-input:focus{
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 600;
+  width: 96%;
+}
+input{
+  border: none;
+  border-bottom: 1px solid #CBCBCB;
+  font-size: 14px;
+  outline: none;
+}
+.category-element{
+  position: relative;
+  margin: 18px 0;
+  display: grid;
+  grid-template-columns: 15% 30% 53%;
+  align-items: center;
+}
+ .category-element img{
+   width: 15px;
+ }
+ #tag img{
+   border-radius: 0!important;
+ }
+ .categories-new-task{
+   margin: 40px 0;
+ }
+ .priority-stars{
+   display: flex;
+ }
+ #priority-container{
+   grid-template-columns: 15% 30% 14% 14% 14%;
+ }
+input[type="radio"]:checked ~ img{
+background-color: rgba(86,119,255,0.10);
+}
+input[type="radio"]{
+  appearance: none;
+  display: contents;
+}
+.star-border img{
+  width: 15px;
+  padding: 5px;
+}
+ .star-border{
+   width: 25px;
+   height: 25px;
+   margin: 0 2px;
+   display: flex;
+   justify-content: center;
+ }
+ .star-border{
+   border: 2.5px solid #5677FF;
+   border-radius: 5px;
+ }
+ .star-border:hover{
+  cursor: pointer;
+  background-color: rgba(86,119,255,0.10);
+ }
+ .exit-icon{
+   width: 12px;
+   position: absolute;
+ }
+ .x-container, .edit-x-container{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .x-container:hover, .edit-x-container:hover{
+   cursor: pointer;
+ }
+ #dark-x,  #new-dark-x{
+   visibility: hidden;
+ }
+ .pick-date, .pick-time{
+   margin: 15px 0;
+ }
+ .pick-date label{
+   margin-right: 10px;
+ }
+ #to-label{
+   margin-left: 16px;
+ }
+ .pick-date input{
+   width: 185px;
+   height: 28px;
+   border-radius: 5px;
+   background-color: rgba(86,119,255,0.10);
+   padding: 2px 6px;
+   border: none;
+ }
+  .pick-date input:hover, .pick-time input:hover{
+    cursor: pointer;
+  }
+  .project-icon{
+    display: inline-flex;
+  }
+  #project{
+    width: 13px;
+  }
+
+/* time picker */
+.pick-time{
+  display: flex;
+  height: 30px;
+  align-items: baseline;
+}
+ul::-webkit-scrollbar {
+  width: 0px;
+}
+.custom-select-hours li, .custom-select-mins li{
+list-style-type: none;
+font-family: arial;
+font-size: 14px;
+padding: 10px;
+}
+.custom-select-hours, .custom-select-mins{
+ display: inline-block;
+ width: 45px;
+ padding: 0;
+ text-align-last: center;
+ margin: 0;
+}
+.custom-select-mins{
+position: absolute;
+}
+#hour-list{
+margin: 0;
+height: 160px;
+overflow-y: scroll;
+}
+.custom-select-hours li:hover, .custom-select-mins li:hover{
+background-color: #f5f5f5;
+cursor: pointer;
+}
+.time-form{
+width: 600px;
+height:200px;
+background-color: #ebf8ff;
+padding: 30px;
+}
+.time-container{
+ background-color: white;
+ box-shadow: 3px 3px 10px #888888;
+ width: 90px;
+ height: 160px;
+ position: relative;
+ left: 10px;
+ z-index: 1;
+}
+#first-container, #second-container, #first-container-edit, #second-container-edit{
+  visibility: hidden;
+}
+.start-time-container{
+ position: relative;
+ margin-left: 10px;
+}
+#contain-mins{
+ position: absolute;
+ top: 38px;
+ left: 50px;
+}
+.start-time-container{
+  width: 75px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: rgba(86,119,255,0.10);
+  padding: 2px;
+}
+.input-section{
+ width: 30px;
+ height: 26px;
+ text-align: center;
+ font-size: 16px;
+ border: none;
+ border-radius: 4px;
+ background-color: rgba(86,119,255,0);
+}
+#custom-select:hover, .start-time-container:hover, .input-section:hover{
+ cursor: pointer;
+}
+.semicolon{
+ position: absolute;
+ top: 5px;
+ left:45%;
+}
+/* EDIT TASK STYLES */
+.form-title{
+  color:#5677FF;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.task-background, .edit-task-background{
+ width: 100vw;
+ height: 100vh;
+ background-color: rgba(0,0,0,0.2);
+ position: fixed;
+ visibility: hidden;
+ z-index: 10;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+#delete-button{
+ margin-left: 10px;
+ background-color: #434343;
+ color: white;
+}
+#delete-button:hover{
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.25);
+  background-color: #343535;
+}
