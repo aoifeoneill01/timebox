@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit task form</title>
+  </head>
+  <body>
+
+<div class="edit-task-background">
+
+<form class="new-task" action="edit.php" method="POST" id="editTaskForm" onclick="hideListEdit()">
+  <div class="edit-x-container" onmouseover="goDark()" onmouseout="goLight()">
+     <img class="exit-icon" src="images/x.svg" alt="exit icon" id="light-x">
+     <img class="exit-icon" src="images/x-dark.svg" alt="exit icon" onclick="editFormExit()" id="dark-x">
+   </div>
+   <div class="task-elements">
+     <p class="form-title">EDIT TASK</p>
+  <input type="hidden" name="id" value="" id="id-edit">
+  <input type="text" class="title-input exit-1" name="name" id="name-edit" value="">
+  <p class="red-text"></p>
+
+<!-- pick date section -->
+  <div class="pick-date">
+    <label for="pick date">Date</label>
+    <input type="date" class="exit-2" name="date" id="date-edit"  value="">
+    <p class="red-text"></p>
+  </div>
+
+<!-- start time section -->
+<div class="pick-time">
+<label for="custom-select">From</label>
+
+<div class="time-input-list-container">
+<div class="start-time-container" onmouseover="showListEdit()">
+<input type="text" class="input-section" id="edit-hours" value="00" name="startHours" readonly>
+<p class="semicolon">:</p>
+<input type="text" class="input-section" id="edit-mins" value="00" name="startMins" readonly>
+</div>
+
+<div class="time-container" id="first-container-edit">
+<ul class="custom-select-hours" id="hour-list">
+ <li onclick="ZeroHedit()">00</li>
+ <li onclick="oneHedit()">01</li>
+ <li onclick="twoHedit()">02</li>
+ <li onclick="threeHedit()">03</li>
+ <li onclick="fourHedit()">04</li>
+ <li onclick="fiveHedit()">05</li>
+ <li onclick="sixHedit()">06</li>
+ <li onclick="sevenHedit()">07</li>
+ <li onclick="eightHedit()">08</li>
+ <li onclick="nineHedit()">09</li>
+ <li onclick="tenHedit()">10</li>
+ <li onclick="elevenHedit()">11</li>
+ <li onclick="twelveHedit()">12</li>
+ <li onclick="thirteenHedit()">13</li>
+ <li onclick="fourteenHedit()">14</li>
+ <li onclick="fifteenHedit()">15</li>
+ <li onclick="sixteenHedit()">16</li>
+ <li onclick="seventeenHedit()">17</li>
+ <li onclick="seventeenteenHedit()">18</li>
+ <li onclick="nineteenHedit()">19</li>
+ <li onclick="twentyHedit()">20</li>
+ <li onclick="twentyoneHedit()">21</li>
+ <li onclick="twentytwoHedit()">22</li>
+ <li onclick="twentythreeHedit()">23</li>
+</ul>
+<ul class="custom-select-mins">
+ <li onclick="zeroMinsedit()">00</li>
+ <li onclick="fifteenMinsedit()">15</li>
+ <li onclick="thirtyMinsedit()">30</li>
+ <li onclick="fourtyfiveMinsedit()">45</li>
+</ul>
+</div>
+</div>
+
+<!-- pick to time section -->
+
+<label for="custom-select" id="to-label">To</label>
+
+<div class="time-input-list-container">
+<div class="start-time-container" onmouseover="showListSecondEdit()">
+<input type="text" class="input-section" id="edit-hours2" value="00" name="endHours" readonly>
+<p class="semicolon">:</p>
+<input type="text" class="input-section" id="edit-mins2" value="00" name="endMins" readonly>
+</div>
+
+<div class="time-container" id="second-container-edit">
+<ul class="custom-select-hours" id="hour-list">
+ <li onclick="ZeroH2edit()">00</li>
+ <li onclick="oneH2edit()">01</li>
+ <li onclick="twoH2edit()">02</li>
+ <li onclick="threeH2edit()">03</li>
+ <li onclick="fourH2edit()">04</li>
+ <li onclick="fiveH2edit()">05</li>
+ <li onclick="sixH2edit()">06</li>
+ <li onclick="sevenH2edit()">07</li>
+ <li onclick="eightH2edit()">08</li>
+ <li onclick="nineH2edit()">09</li>
+ <li onclick="tenH2edit()">10</li>
+ <li onclick="elevenH2edit()">11</li>
+ <li onclick="twelveH2edit()">12</li>
+ <li onclick="thirteenH2edit()">13</li>
+ <li onclick="fourteenH2edit()">14</li>
+ <li onclick="fifteenH2edit()">15</li>
+ <li onclick="sixteenH2edit()">16</li>
+ <li onclick="seventeenH2edit()">17</li>
+ <li onclick="seventeenteenH2edit()">18</li>
+ <li onclick="nineteenH2edit()">19</li>
+ <li onclick="twentyH2edit()">20</li>
+ <li onclick="twentyoneH2edit()">21</li>
+ <li onclick="twentytwoH2edit()">22</li>
+ <li onclick="twentythreeH2edit()">23</li>
+</ul>
+<ul class="custom-select-mins">
+ <li onclick="zeroMins2edit()">00</li>
+ <li onclick="fifteenMins2edit()">15</li>
+ <li onclick="thirtyMins2edit()">30</li>
+ <li onclick="fourtyfiveMins2edit()">45</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- pick priority section -->
+<div class="categories-new-task">
+  <div class="category-element" id="priority-container">
+    <img id="priority" src="images/star.svg" alt="priority icon">
+    <label for="priority">Priority</label>
+    <label class="star-border" id="pinkStar">
+      <input type="radio" name="priority" value="pinkStar" class="radio-input" id="p-star-edit">
+      <img src="images/pinkStar.svg">
+    </label>
+     <label class="star-border" id="purpleStar">
+      <input type="radio" name="priority" value="purpleStar" class="radio-input" id="pu-star-edit">
+      <img src="images/purpleStar.svg">
+    </label>
+    <label class="star-border" id="greenStar">
+      <input type="radio" name="priority" value="greenStar" class="radio-input" id="g-star-edit">
+      <img src="images/greenStar.svg">
+    </label>
+</div>
+
+<!-- project name section -->
+  <div class="category-element" id="projects">
+    <img id="project" src="images/project-black.svg" alt="projects icon">
+    <label for="project">Project</label>
+    <input type="text" class="exit-5" name="project" value="" id="project-edit">
+  </div>
+
+  <!-- tag name section -->
+  <div class="category-element" id="tag">
+    <img id="tag" src="images/tag-create-task.svg" alt="Tag icon">
+    <label for="tag">Tag</label>
+    <input type="text" class="exit-6" name="tag" value="" id="edit-tag">
+  </div>
+  </div>
+
+  <div class="confirm-button-container">
+    <input type="submit" name="submit-edit" value="Submit" class="button-blue" id="confirm-button">
+    <input type="submit" name="delete" value="Delete" class="button-blue" id="delete-button">
+  </div>
+  </div>
+ </form>
+
+ </div>
+
+
+
+</body>
+</html>

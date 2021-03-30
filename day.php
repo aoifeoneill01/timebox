@@ -71,8 +71,8 @@
                  <p class="todays-date"></p>
                </div>
                <div class="calendar-arrows">
-                 <button type="button" name="button-back-date" onclick="changeDateBack(); getTasks()" id="back-date"><img src="images/left-arrow.svg" alt="Back arrow"></button>
-                 <button type="button" name="button-forward-date" onclick="changeDateForward(); getTasks()" id="for-date"><img src="images/right-arrow.svg" alt="Forward arrow"></button>
+                 <button type="button" name="button-back-date" onclick="changeDateBack(); getTasks();" id="back-date"><img src="images/left-arrow.svg" alt="Back arrow"></button>
+                 <button type="button" name="button-forward-date" onclick="changeDateForward(); getTasks();" id="for-date"><img src="images/right-arrow.svg" alt="Forward arrow"></button>
                </div>
              </header>
 
@@ -87,76 +87,76 @@
                    <th class="grey" id="column6">Status</th>
                </tr>
             <tr id="row00">
-               <td><div class="table-time-container" id="time00"><span class="hours">00</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">00</span>:00</div></td>
             </tr>
             <tr id="row01">
-              <td><div class="table-time-container" id="time01"><span class="hours">01</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">01</span>:00</div></td>
             </tr>
             <tr id="row02">
-              <td><div class="table-time-container" id="time02"><span class="hours">02</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">02</span>:00</div></td>
             </tr>
             <tr id="row03">
-               <td><div class="table-time-container" id="time04"><span class="hours">03</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">03</span>:00</div></td>
             </tr>
             <tr id="row04">
-               <td><div class="table-time-container" id="time04"><span class="hours">04</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">04</span>:00</div></td>
             </tr>
             <tr id="row05">
-              <td><div class="table-time-container" id="time05"><span class="hours">05</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">05</span>:00</div></td>
             </tr>
             <tr id="row06">
-               <td><div class="table-time-container" id="time06"><span class="hours">06</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">06</span>:00</div></td>
             </tr>
             <tr id="row07">
-              <td><div class="table-time-container" id="time07"><span class="hours">07</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">07</span>:00</div></td>
             </tr>
             <tr id="row08">
-               <td><div class="table-time-container" id="time08"><span class="hours">08</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">08</span>:00</div></td>
             </tr>
             <tr id="row09">
-              <td><div class="table-time-container" id="time09"><span class="hours">09</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">09</span>:00</div></td>
             </tr>
             <tr id="row10">
-               <td><div class="table-time-container" id="time10"><span class="hours">10</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">10</span>:00</div></td>
             </tr>
             <tr id="row11">
-             <td><div class="table-time-container" id="time11"><span class="hours">11</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">11</span>:00</div></td>
             </tr>
             <tr id="row12">
-              <td><div class="table-time-container" id="time12"><span class="hours">12</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">12</span>:00</div></td>
             </tr>
             <tr id="row13">
-              <td><div class="table-time-container" id="time13"><span class="hours">13</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">13</span>:00</div></td>
             </tr>
             <tr id="row14">
-               <td><div class="table-time-container" id="time14"><span class="hours">14</span>:00</div></td>
+               <td><div class="table-time-container"><span class="hours">14</span>:00</div></td>
             </tr>
             <tr id="row15">
-              <td><div class="table-time-container" id="time15"><span class="hours">15</span>:00</div></td>
+              <td><div class="table-time-container"><span class="hours">15</span>:00</div></td>
            </tr>
            <tr id="row16">
-             <td><div class="table-time-container" id="time16"><span class="hours">16</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">16</span>:00</div></td>
            </tr>
            <tr id="row17">
-             <td><div class="table-time-container" id="time17"><span class="hours">17</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">17</span>:00</div></td>
            </tr>
            <tr id="row18">
-             <td><div class="table-time-container" id="time18"><span class="hours">18</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">18</span>:00</div></td>
            </tr>
            <tr id="row19">
-             <td><div class="table-time-container" id="time19"><span class="hours">19</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">19</span>:00</div></td>
            </tr>
            <tr id="row20">
-             <td><div class="table-time-container" id="time20"><span class="hours">20</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">20</span>:00</div></td>
            </tr>
            <tr id="row21">
-             <td><div class="table-time-container" id="time21"><span class="hours">21</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">21</span>:00</div></td>
            </tr>
            <tr id="row22">
-             <td><div class="table-time-container" id="time22"><span class="hours">22</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">22</span>:00</div></td>
            </tr>
            <tr id="row23">
-             <td><div class="table-time-container" id="time23"><span class="hours">23</span>:00</div></td>
+             <td><div class="table-time-container"><span class="hours">23</span>:00</div></td>
            </tr>
              </table>
              <div class="button-container-mobile">
@@ -170,12 +170,10 @@
     <script src="javascript/date.js"></script>
     <script src="javascript/time-pick.js"></script>
     <script src="javascript/day-scripts.js"></script>
-  <!--    <script src="javascript/scripts-new.js"></script>
+    <script src="javascript/scripts.js"></script>
     <script src="javascript/status.js"></script>
     <script src="javascript/time-pick-edit.js"></script>
-    <script src="javascript/task-complete.js"></script>
     <script src="javascript/sort-elements-day.js"></script>
--->
 
 
    </body>

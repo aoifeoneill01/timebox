@@ -72,7 +72,7 @@ if(empty($_POST['startHours'])) {
  $priority = mysqli_real_escape_string($conn, $_POST['priority']);
 
 
- $query = "INSERT INTO _____(name, date, startHours, startMins, endHours, endMins, project, tag, priority) VALUES('$name', '$date', '$startHours', '$startMins', '$endHours', '$endMins', '$project', '$tag', '$priority')";
+ $query = "INSERT INTO users(name, date, startHours, startMins, endHours, endMins, project, tag, priority) VALUES('$name', '$date', '$startHours', '$startMins', '$endHours', '$endMins', '$project', '$tag', '$priority')";
 
  //check query connection
 if(mysqli_query($conn, $query)) {

@@ -237,6 +237,7 @@ td:nth-child(1), .time-slot{
  position: absolute;
  background-color: rgba(255,255,255,0.45);
  width: 100%;
+ padding-bottom: 30px;
 }
 .add30{
   padding-bottom: 30px;
@@ -249,7 +250,7 @@ width: 6%;
 background: linear-gradient(90deg, rgba(244,240,247,1) 0%, rgba(244,239,247,1) 100%);
 }
 #column2{
-width: auto;
+width: 26%;
 background: linear-gradient(90deg, rgba(242,239,248,1) 0%, rgba(237,237,250,1) 100%);
 }
 #column3{
@@ -290,29 +291,46 @@ background-color: #E7ECFD;
   background-repeat: no-repeat;
   background-size: 15px;
   background-position-y: 8px;
+  color: rgba(0,0,0,0);
 }
 .purple{
   background-image: url('../images/purpleStar.svg');
   background-repeat: no-repeat;
   background-size: 15px;
   background-position-y: 8px;
+  color: rgba(0,0,0,0);
 }
 .green{
   background-image: url('../images/greenStar.svg');
   background-repeat: no-repeat;
   background-size: 15px;
   background-position-y: 8px;
+  color: rgba(0,0,0,0);
+}
+.hide{
+  display: none;
 }
 .toggleDisplay{
   display: block!important;
 }
-/* ADD CLASSES TO ACTIVE TIME SLOTS */
+#task{
+  height: 22px;
+  padding: 4px 0 4px 10px;
+  width: 80%;
+  border-radius: 15px 0;
+  font-weight: 500;
+}
 .status-bg{
   background-color: white;
   padding: 3px 0;
 }
 .time-bg{
   background-color: white;
+  padding: 7px 0 7px 16px;
+  height: 16px;
+  border-radius: 15px 0 0 0;
+  color: #919191;
+  font-size: 12px;
 }
 .project-bg{
   background-color: white;
@@ -320,39 +338,11 @@ background-color: #E7ECFD;
   width: 100%;
   height: 22px;
 }
-.name-purple-bg{
-  color: #5600FF;
-  background-color: rgba(86,0,255,0.15);
-  padding: 5px 15px;
-  font-weight: 500;
-  width: 70%;
-  border-radius: 15px 0;
-}
-.name-pink-bg{
-  color: #FF004D;
-  background-color: rgba(255,0,77,0.15);
-  padding: 5px 15px;
-  font-weight: 500;
-  width: 70%;
-  border-radius: 15px 0 15px 0;
-}
-.name-green-bg{
-  color: #209870;
-  background-color: rgba(32,152,112,0.15);
-  padding: 5px 15px;
-  font-weight: 500;
-  width: 70%;
-  border-radius: 15px 0 15px 0;
-}
 .task-name-container{
   background-color: white;
   width: 100%;
   height: 30px;
   position: relative;
-}
-.minutes{
-  border-radius: 15px 0 0 0;
-  padding: 7px 0 7px 16px;
 }
 .btn-tasks:hover, .btn-complete:hover{
  cursor: pointer;
