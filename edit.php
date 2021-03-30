@@ -13,7 +13,7 @@ if(isset($_POST['delete'])) {
 
     //check query connection
    if(mysqli_query($conn, $queryDelete)) {
-     header('Location: Day.php');
+     header('Location: day.php');
    //echo 'Done';
    } else {
      echo 'Delete request error';
@@ -40,7 +40,7 @@ if(isset($_POST['delete'])) {
 
      //check query connection
     if(mysqli_query($conn, $queryUpdate)) {
-      header('Location: Day.php');
+      header('Location: day.php');
     //echo 'Done';
     } else {
       echo 'Update request error';
